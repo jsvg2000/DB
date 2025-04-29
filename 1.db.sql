@@ -42,3 +42,4 @@ CREATE TABLE establishments (
     last_updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_by_user_id INTEGER REFERENCES users(id)
 );
+
