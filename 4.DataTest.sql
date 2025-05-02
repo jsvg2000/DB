@@ -9,6 +9,10 @@ INSERT INTO users (name, email, password, role_id) VALUES
 -- Set current user session for auditing
 SET session "app.current_user_id" = 1;
 
+-- Insert merchant_states
+INSERT INTO merchant_states ("name") VALUES('Activo');
+INSERT INTO merchant_states ("name") VALUES( 'Inactivo');
+
 -- Insert merchants
 INSERT INTO merchants (business_name, municipality, phone, email, state_id)
 VALUES
